@@ -1,0 +1,148 @@
+/* first container */
+
+body {
+    background-color: #000000;
+    text-align: center;
+}
+
+* {
+    color: white;
+    font-family: 'ArcadeClassic', sans-serif;
+    box-sizing: border-box;
+}
+
+#middle, #footer, #game-play{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* second container */
+
+.btn {
+    cursor: pointer;
+}
+
+.modal {
+    display: grid;
+    justify-content: center;
+}
+
+.create-border {
+    background-color: white;
+    display: grid;
+    border: none;
+    justify-content: center;
+    height: 180px;
+    width: 400px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px 5px #404149;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.message {
+    color: black;
+    max-width: 250px;
+}
+
+.reset-modal {
+    color: black;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding: 10px 0;
+    max-width: 200px;
+}
+
+.again:hover {
+    background-color: #ccc;
+    height: 70px;
+}
+
+.overlay {
+    width: 100%;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#header {
+    display: grid;
+    justify-content: center;
+    margin: 15px;
+}
+
+.header-text {
+    font-size: 80px;
+    margin: 0;
+}
+
+.image {
+    width: 500px;
+    margin: 40px;
+}
+
+.image-choice {
+    height: 150px;
+    width: 150px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+.image-choice:hover {
+    box-shadow: 0 0 5px #ffa500,
+    0 0 25px #ffa500,
+    0 0 50px #ffa500,
+    0 0 100px #ffa500;
+}
+
+.click {
+    box-shadow: 0 0 5px #ffffff,
+    0 0 25px #ffffff,
+    0 0 50px #ffffff,
+    0 0 100px #ffffff;
+}
+
+/* third container */
+
+.player {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+}
+
+.vs {
+    align-self: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* fourth container */
+
+.play:hover {
+    background-color: #cccccc;
+}
+
+.score {
+    text-align: start;
+    font-size: 1.5rem;
+}
+p {
+    font-weight: bold;
+}

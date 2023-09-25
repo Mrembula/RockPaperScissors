@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="eng">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Rock Paper Scissors</title>
-        <script type="text/javascript" src="external.js"></script>
-    </head>
-    <body>
-        <h1>JavaScript</h1>
-    </body>
+<html lang="eng" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <link href="style.css" rel="stylesheet" >
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+</head>
+<body>
+<div id="header" class="game-over">
+    <h1 class="header-text">Rock Paper Scissors</h1>
+    <img src="image/rps_image.png" alt="Rock Paper Scissors" class="image">
+</div>
+<div id="message" class="modal hidden">
+    <div class="create-border">
+        <h2 class="message">Game Over! Click to play again</h2>
+        <button class="btn reset-modal">Play</button>
+    </div>
+</div>
+<div id="middle" class="game-over" style="justify-content: space-around">
+    <button><img class="btn image-choice" src="image/rock.png" alt="rock" id="rock"></button>
+    <button><img class="btn image-choice" src="image/paper.png" alt="paper" id="paper"></button>
+    <button><img class="btn image-choice" src="image/scissor.png" alt="scissor" id="scissor"></button>
+</div>
+<div id="game-play" class="game-over">
+    <div class="computer">
+        <img src="image/plain_black.png" alt="computer" class="player" id="computer">
+        <p id="computerText">computer</p>
+    </div>
+    <p class="vs">vs</p>
+    <div class="user">
+        <img src="image/plain_black.png" alt="user" class="player" id="user">
+        <p id="userText">user</p>
+    </div>
+</div>
+<div id="footer" class="game-over">
+    <div class="score">
+        <p>Score: <span id="score">0</span></p>
+        <p>High score: <span id="high-score">0</span></p>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="external.js"></script>
 </html>
